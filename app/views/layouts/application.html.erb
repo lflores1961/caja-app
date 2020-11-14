@@ -4,12 +4,24 @@
     <title>Caja</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= favicon_link_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+  <div class="container">
+      <nav>Navbar</nav>
+      <main>Main
+        <%= yield %>
+      </main>
+      <div id="sidebar">
+        <%= render "sideBar" %>
+      </div>
+      <footer>Footer</footer>
+    </div>  
+    
   </body>
 </html>

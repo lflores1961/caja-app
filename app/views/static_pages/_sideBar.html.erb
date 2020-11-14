@@ -1,0 +1,12 @@
+<div class="sidebar-menu">
+  <% @options.each do |opcion| %>
+    <li class="item">
+      <%= link_to opcion[:letrero], '#', class: "btn btn-default cust-button" %>
+        <div class="submenu">
+          <% opcion[:submenu].each do |subopcion| %>
+            <%= link_to subopcion[:opcion], '#', class: "btn btn-default cust-button" %>
+          <% end %>
+        </div>
+    </li>
+  <% end %>
+</div>
