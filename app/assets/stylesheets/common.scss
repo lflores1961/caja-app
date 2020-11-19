@@ -1,7 +1,23 @@
+:root {
+  --main-radius:5px;
+  --main-padding:10px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   display:grid;
   height:100vh;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 1.5fr 1.2fr 0.4fr;
   grid-template-areas:
      "nav nav nav nav"
@@ -9,11 +25,11 @@
      "sidebar main main main"
      "sidebar footer footer footer";
   grid-gap: 0.2rem;
-  font-family: "Inter", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 12px;
-  color: #004d40;
+  // color: #004d40;
+  background: #cedddd;
   text-align: center;
 }
 
@@ -31,11 +47,99 @@ main {
   padding-top: var(--main-padding);
 }
 
-#sidebar {
-  background: #18ffff;
+.sidebar {
+  z-index: 1;
+  background: #84ffff;
   grid-area: sidebar;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  display: inline-block;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.sidebar .titulo {
+  color: #3a817e;
+  margin-top: 10px;
+  font-size: 15px;
+  padding-bottom: 10px;;
+}
+
+.sidebar .sidebar-menu {
+  overflow: hidden;
+}
+
+.sidebar .sidebar-menu .item {
+  width: 250px;
+  text-align: center;
+  margin: 15px;
+  overflow: hidden;
+}
+
+.sidebar .sidebar-menu .item .menu-btn {
+  // display: flexbox;
+  // position: relative;
+  // padding: 10px 15px;
+  /* Este es un nodo crítico de estilo*/
+  text-decoration: none;
+  color: #cedddd;
+}
+
+.sidebar .sidebar-menu .item .someShit {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background: #226966;
+  color: #cedddd;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+.sidebar .sidebar-menu .item .someShit:hover {
+  color: #0c2e2c;
+  background: #cedddd;
+}
+
+.sidebar .sidebar-menu .item .menu-btn:hover {
+  color: #0c2e2c;
+}
+// .sidebar .sidebar-menu .item .menu-btn:hover {
+//   color: #a7ffeb;
+//   background: #076661;
+// }
+
+.sidebar .sidebar-menu .item .menu-btn i {
+  margin-right: 2px;
+}
+/*
+.sidebar .sidebar-menu .item .menu-btn .drop-down {
+  float: right;
+  font-size: 12px;
+}
+*/
+i.fas.fa-chevron-down.drop-down {
+  float: right;
+}
+
+.sidebar .sidebar-menu .submenu li a {
+  display: block;
+  padding: 5px 10px;
+  background: #3a817e;
+  color:  #a1b1b1;
+}
+
+.sidebar .sidebar-menu .submenu li a:hover {
+  background: cadetblue;
+  color: rgb(236, 241, 241);
+}
+
+/* Aquí está la magia de ocultar el submenu */
+.sidebar .sidebar-menu .submenu ul {
+  /*display: none;*/
+}
+
+.sidebar .sidebar-menu .submenu ul li a {
+
 }
 
 footer {

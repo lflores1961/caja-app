@@ -1,12 +1,18 @@
 <div class="sidebar-menu">
   <% @options.each do |opcion| %>
-    <li class="item">
-      <%= link_to opcion[:letrero], '#', class: "btn btn-default cust-button" %>
-        <div class="submenu">
-          <% opcion[:submenu].each do |subopcion| %>
-            <%= link_to subopcion[:opcion], '#', class: "btn btn-default cust-button" %>
-          <% end %>
-        </div>
+    <li class="item" id="<%= opcion[:letrero] %>">
+      <div class="someShit">
+        <%= link_to opcion[:letrero], '#', class: "menu-btn" %>
+        <i class="fas fa-chevron-down drop-down"></i>
+      </div>
+        <ul class="submenu">
+          <li>
+            <% opcion[:submenu].each do |subopcion| %>
+          
+              <%= link_to subopcion[:opcion], '#', class: "submenu-item" %>
+            <% end %>
+          </li>
+        </ul>
     </li>
   <% end %>
 </div>
