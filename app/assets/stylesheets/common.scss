@@ -74,6 +74,7 @@ main {
   text-align: center;
   margin: 15px;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .sidebar .sidebar-menu .item .menu-btn {
@@ -134,12 +135,8 @@ i.fas.fa-chevron-down.drop-down {
 }
 
 /* Aquí está la magia de ocultar el submenu */
-.sidebar .sidebar-menu .submenu ul {
-  /*display: none;*/
-}
-
-.sidebar .sidebar-menu .submenu ul li a {
-
+.sidebar .sidebar-menu li ul.submenu {
+  // display: none;
 }
 
 footer {
@@ -147,20 +144,5 @@ footer {
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
-}
-
-@media only screen and (max-width: 600px){
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-    grid-template-areas:
-      "nav"
-      "sidebar"
-      "main"
-      "content1"
-      "content2"
-      "content3"
-      "footer";
-  }    
 }
 
