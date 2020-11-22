@@ -65,79 +65,77 @@ main {
   padding-bottom: 10px;;
 }
 
-.sidebar .sidebar-menu {
-  overflow: hidden;
-}
-
-.sidebar .sidebar-menu .item {
-  width: 250px;
-  text-align: center;
-  margin: 15px;
-  overflow: hidden;
-  border-radius: 5px;
-}
-
-.sidebar .sidebar-menu .item .menu-btn {
-  // display: flexbox;
-  // position: relative;
-  // padding: 10px 15px;
-  /* Este es un nodo crítico de estilo*/
-  text-decoration: none;
-  color: #cedddd;
-}
-
-.sidebar .sidebar-menu .item .someShit {
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  background: #226966;
-  color: #cedddd;
-  transition: 0.3s;
-  transition-property: color, background;
-}
-
-.sidebar .sidebar-menu .item .someShit:hover {
-  color: #0c2e2c;
-  background: #cedddd;
-}
-
-.sidebar .sidebar-menu .item .menu-btn:hover {
-  color: #0c2e2c;
-}
-// .sidebar .sidebar-menu .item .menu-btn:hover {
-//   color: #a7ffeb;
-//   background: #076661;
+// .sidebar .sidebar-menu {
+//   overflow: hidden;
 // }
 
-.sidebar .sidebar-menu .item .menu-btn i {
-  margin-right: 2px;
-}
-/*
-.sidebar .sidebar-menu .item .menu-btn .drop-down {
-  float: right;
-  font-size: 12px;
-}
-*/
-i.fas.fa-chevron-down.drop-down {
-  float: right;
-}
+// .sidebar .sidebar-menu .item {
+//   width: 250px;
+//   text-align: center;
+//   margin: 15px;
+//   overflow: hidden;
+//   border-radius: 5px;
+// }
 
-.sidebar .sidebar-menu .submenu li a {
-  display: block;
-  padding: 5px 10px;
-  background: #3a817e;
-  color:  #a1b1b1;
-}
+// .sidebar .sidebar-menu .item .menu-btn {
+//   // display: flexbox;
+//   // position: relative;
+//   // padding: 10px 15px;
+//   /*Este es un nodo crítico de estilo*/
+//   text-decoration: none;
+//   color: #cedddd;
+// }
 
-.sidebar .sidebar-menu .submenu li a:hover {
-  background: cadetblue;
-  color: rgb(236, 241, 241);
-}
+// .sidebar .sidebar-menu .item .someShit {
+//   display: block;
+//   text-decoration: none;
+//   padding: 10px;
+//   background: #226966;
+//   color: #cedddd;
+//   transition: 0.3s;
+//   transition-property: color, background;
+// }
 
-/* Aquí está la magia de ocultar el submenu */
-.sidebar .sidebar-menu li ul.submenu {
-  // display: none;
-}
+// .sidebar .sidebar-menu .item .someShit:hover {
+//   color: #0c2e2c;
+//   background: #cedddd;
+// }
+
+
+// .sidebar .sidebar-menu .item .menu-btn:hover {
+//   color: #0c2e2c;
+//   // background: #076661;
+// }
+
+// .sidebar .sidebar-menu .item .menu-btn i {
+//   margin-right: 2px;
+// }
+// /*
+// .sidebar .sidebar-menu .item .menu-btn .drop-down {
+//   float: right;
+//   font-size: 12px;
+// }
+// */
+// i.fas.fa-chevron-down.drop-down {
+//   float: right;
+// }
+
+// .sidebar .sidebar-menu .submenu li a {
+//   display: block;
+//   padding: 5px 10px;
+//   background: #3a817e;
+//   color:  #a1b1b1;
+// }
+
+// .sidebar .sidebar-menu .submenu li a:hover {
+//   background: cadetblue;
+//   color: rgb(236, 241, 241);
+// }
+
+// /* Aquí está la magia de ocultar el submenu */
+// .sidebar .sidebar-menu li ul.submenu {
+//   // display: none;
+// }
 
 footer {
   background: #1de9b6;
